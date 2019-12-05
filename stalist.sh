@@ -1,6 +1,13 @@
 #!/bin/sh
 
 IFNAME=$1
+
+if [ $# -eq 0 ]; then                                                                                               
+        echo "Not selected interface"                                                                               
+        echo "Usage: stalist.sh <interface>, ex. eth5"                                                              
+        exit 0                                                                                                      
+fi     
+
 echo " ___________________________________________________________________________________________________________ "  
 echo " " 
 echo " " 
